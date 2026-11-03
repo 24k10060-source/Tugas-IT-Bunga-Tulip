@@ -1,0 +1,172 @@
+:root {
+  --tulip-primary: #e84393;
+  --tulip-primary-hover: #d63031;
+  --tulip-soft-pink: #fd79a8;
+  --tulip-bg-light: #fff5f7;
+  --tulip-cream: #faf7f2;
+  --tulip-dark: #2d3436;
+  --tulip-leaf: #27ae60;
+  --tulip-leaf-dark: #218c54;
+  --tulip-card-shadow: 0 10px 25px rgba(232, 67, 147, 0.08);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #2d3436;
+  background-color: #fafbfc;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Navbar */
+.navbar-tulip {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(232, 67, 147, 0.12);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand-tulip {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--tulip-primary) !important;
+  font-size: 1.55rem;
+  letter-spacing: -0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #555 !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--tulip-primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #fff0f5 0%, #fff 50%, #f7f9fc 100%);
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge {
+  background: rgba(232, 67, 147, 0.1);
+  color: var(--tulip-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Tulip Cards */
+.tulip-card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.tulip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(232, 67, 147, 0.14);
+}
+
+.tulip-card-img-wrap {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.tulip-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tulip-card:hover .tulip-card-img {
+  transform: scale(1.07);
+}
+
+.badge-color-pill {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-tulip {
+  background: var(--tulip-primary);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-tulip:hover {
+  background: var(--tulip-primary-hover);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(232, 67, 147, 0.3);
+}
+
+.btn-tulip-outline {
+  border: 1.5px solid var(--tulip-primary);
+  color: var(--tulip-primary);
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-tulip-outline:hover {
+  background: var(--tulip-primary);
+  color: #fff;
+}
+
+/* Meaning Box */
+.meaning-card {
+  border-left: 4px solid var(--tulip-primary);
+  background: var(--tulip-bg-light);
+  border-radius: 0 12px 12px 0;
+  padding: 20px;
+}
+
+/* Footer */
+.footer-tulip {
+  background: #1e272e;
+  color: #d2dae2;
+  padding: 50px 0 25px;
+}
+
+.footer-tulip a {
+  color: #ffb8b8;
+  text-decoration: none;
+}
+
+.footer-tulip a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

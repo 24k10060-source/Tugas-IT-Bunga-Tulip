@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: tulip-haven
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: singapore
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+        value: 3306
+      - key: DB_NAME
+        sync: false
+        value: defaultdb
+      - key: DB_USER
+        sync: false
+        value: avnadmin
+      - key: DB_PASSWORD
+        sync: false
